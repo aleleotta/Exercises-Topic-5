@@ -3,11 +3,17 @@ import java.util.*;
 
 public class Exercise5 {
 	public static void main(String[] args) {
+		/*Class Double must be used with variables: MIN_VALUE, MAX_VALUE.
+		 */
+		
 		double arrayStorage[] = new double[10];
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Introduce a decimal number: ");
 		for(int i = 0; i < arrayStorage.length; i++) {
 			arrayStorage[i]= sc.nextDouble();
+		}
+		for(double arrayEachInput: arrayStorage) {
+			System.out.print(arrayEachInput + " ");
 		}
 		sc.close();
 	}
