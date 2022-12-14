@@ -7,11 +7,14 @@ public class Exercise3 {
 		double input;
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Introduce a decimal number: ");
-		for(int i = 0; i > arrayStorage ; i++) {
-			arrayStorage[i];
+		for(int i = 0; i < arrayStorage.length; i++) {
+			arrayStorage[i]= sc.nextDouble();
 		}
-		for(int arrayEachInput: arrayStorage[i]) {}
-		System.out.println();
+		System.out.print("[");
+		for(double arrayEachInput: arrayStorage) {
+			System.out.print(arrayEachInput + " ");
+		}
+		System.out.print("]");
 		sc.close();
 	}
 }
