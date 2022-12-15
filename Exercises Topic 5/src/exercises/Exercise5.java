@@ -8,8 +8,8 @@ public class Exercise5 {
 		double min = Double.MAX_VALUE;
 		double arrayStorage[] = new double[10];
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Introduce a decimal number: ");
 		for(int i = 0; i < arrayStorage.length; i++) {
+			System.out.print("Introduce the next array value: ");
 			arrayStorage[i]= sc.nextDouble();
 		}
 		for(double arrayEachInput: arrayStorage) {
@@ -17,10 +17,12 @@ public class Exercise5 {
 			if (min > arrayEachInput) {
 				min = arrayEachInput;
 			} 
-			if (max > arrayEachInput) {
+			if (max < arrayEachInput) {
 				max = arrayEachInput;
 			}
 		}
+		System.out.println("\nMinimum: " + min);
+		System.out.println("Maximum: " + max);
 		sc.close();
 	}
 }
