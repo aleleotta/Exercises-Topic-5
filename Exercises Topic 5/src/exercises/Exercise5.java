@@ -4,7 +4,7 @@ import java.util.*;
 public class Exercise5 {
 	public static void main(String[] args) {
 		//Class Double must be used with variables: MIN_VALUE, MAX_VALUE.
-		double max = Double.MIN_VALUE;
+		double max = Double.MIN_VALUE; //Declaring a variable and assigning a constant variable from another class.
 		double min = Double.MAX_VALUE;
 		double arrayStorage[] = new double[10];
 		Scanner sc = new Scanner(System.in);
