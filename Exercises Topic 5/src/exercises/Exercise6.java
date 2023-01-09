@@ -3,7 +3,15 @@ import java.util.*;
 
 public class Exercise6 {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		int table[] = new int[8]; //Declaration of array with specific length.
+		Scanner sc = new Scanner(System.in); //Scanner declared.
+		System.out.print("Introduce a number: "); //Program asks for input.
+		for(int i = 0; i < table.length ; i++) { //Normal for cycle modifies.
+			table[i] = sc.nextInt(); //Modification of values within array on every single position.
+		}
+		for(int tableQuery: table) { //For each cycle does queries.
+			
+		}
 		sc.close();
 	}
 }

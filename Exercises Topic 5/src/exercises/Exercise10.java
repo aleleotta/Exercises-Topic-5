@@ -3,8 +3,6 @@ import java.util.*;
 
 public class Exercise10 {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		sc.close();
 	}
 }
 /*Crea un programa que cree un array de enteros de tamaño 100
