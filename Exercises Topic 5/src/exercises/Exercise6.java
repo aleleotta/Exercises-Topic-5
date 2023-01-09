@@ -9,10 +9,12 @@ public class Exercise6 {
 		for(int i = 0; i < table.length ; i++) { //Normal for cycle modifies.
 			table[i] = sc.nextInt(); //Modification of values within array on every single position.
 		}
+		System.out.print("[");
 		for(int tableQuery: table) { //For each cycle does queries.
-			
+			System.out.print(tableQuery + " "); //Prints every single value within the array.
 		}
-		sc.close();
+		System.out.print("]");
+		sc.close(); //Scanner closed.
 	}
 }
 /*Realiza un programa que pida 8 números enteros y los almacene en una tabla.
