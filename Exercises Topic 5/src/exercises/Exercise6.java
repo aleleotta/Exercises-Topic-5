@@ -12,6 +12,11 @@ public class Exercise6 {
 		System.out.print("[");
 		for(int tableQuery: table) { //For each cycle does queries.
 			System.out.print(tableQuery + " "); //Prints every single value within the array.
+			if(tableQuery % 2 == 0) { //The loop will print whether the following numbers is odd or even.
+				System.out.print("EVEN | ");
+			} else {
+				System.out.print("ODD | ");
+			}
 		}
 		System.out.print("]");
 		sc.close(); //Scanner closed.
